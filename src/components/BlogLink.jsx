@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const BlogLink = () => {
   useEffect(() => {
-    window.location.replace("https://www.terklog.com/");
+    window.open("https://www.terklog.com/");
   }, []);
 
   return (
