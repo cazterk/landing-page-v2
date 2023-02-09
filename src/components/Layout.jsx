@@ -1,4 +1,5 @@
 import Sidebar from "./navbar";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
@@ -7,6 +8,7 @@ const Layout = ({ children }) => {
         <Sidebar />
       </div>
       <main>{children}</main>
+      <Footer />
     </div>
   );
 };
