@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
       <div>
         <Sidebar />
       </div>
-      <main>{children}</main>
+      <main className="h-full bg-slate-50 ">{children}</main>
       <Footer />
     </div>
   );

@@ -5,9 +5,9 @@ import { ImLinkedin } from "react-icons/im";
 
 const Home = () => {
   return (
-    <div className="flex  flex-col justify-center items-center h-screen">
+    <div className="flex  flex-col justify-center items-center h-full ">
       <i className="mb-4">logo</i>
-      <h1 className="text-4xl font-bold">Cazterk</h1>
+      <h1 className="text-5xl font-bold">Cazterk</h1>
       <p className="my-4 text-lg font-medium ">
         Christian | Frontend First Dev | Dotnet Backend | Unity
       </p>
