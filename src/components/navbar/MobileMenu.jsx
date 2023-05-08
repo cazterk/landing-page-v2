@@ -1,12 +1,31 @@
 import { Link } from "react-router-dom";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { useEffect, useState } from "react";
 
 const MobileMenu = ({ links, close }) => {
+  const [animation, setAnimation] = useState(false);
+
+  useEffect(() => {
+    setAnimation(true);
+
+    window.addEventListener("resize", (e) => {
+      if (e.target.innerWidth >= 640) {
+        close();
+      }
+    });
+    return () => {
+      window.removeEventListener("resize", () => {});
+    };
+  }, []);
   return (
     <div>
       <div className="fixed inset-0 top-0 1-0 h-screen w-full backdrop-blur-sm bg-gray-500 bg-opacity-60"></div>
       <div className="fixed inset-0 top-0 1-0 p-5">
-        <div className="w-full bg-white rounded-xl p-5">
+        <div
+          className={`w-full bg-white rounded-xl p-5 transition-all ${
+            animation ? "scale-100" : "scale-95"
+          }`}
+        >
           <div className="flex items-center justify-between">
             <h1>Navigation</h1>
             <AiFillCloseCircle

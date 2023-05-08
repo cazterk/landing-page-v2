@@ -21,7 +21,8 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="-mr-2 flex justify-end md:hidden p-3">
+      <div className=" flex justify-between sm:hidden p-3">
+        <Link to={"/"}>Logo</Link>
         <HamburgerMenu isOpen={isOpen} toggle={toggleMenu} />
         {isOpen ? <MobileMenu links={NavbarLinks} close={toggleMenu} /> : <></>}
       </div>
