@@ -1,25 +1,29 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { IconContext } from "react-icons";
-import { SidebarData } from "./data";
+
+import { NavbarLinks } from "./data";
+import HamburgerMenu from "./HamburgerMenu";
+import MobileMenu from "./MobileMenu";
+import DesktopMenu from "./DesktopMenu";
 
 const Sidebar = () => {
-  return (
-    <div className="flex h-16 bg-white justify-between px-96 items-center">
-      <Link to={"/"}>Logo</Link>
+  const [isOpen, setIsOpen] = useState(false);
 
-      <div className="flex">
-        {SidebarData.map((item, idx) => {
-          return (
-            <li key={idx} className="list-none">
-              <IconContext.Provider value={{ size: "18", color: "#ff6b6b" }}>
-                <Link to={item.path} className="flex items-center px-2 ">
-                  {item.icon}
-                  <span className="pl-1">{item.title}</span>
-                </Link>
-              </IconContext.Provider>
-            </li>
-          );
-        })}
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div>
+      <div className=" hidden sm:block">
+        <div className="flex h-16 bg-white justify-between px-96 items-center">
+          <DesktopMenu links={NavbarLinks} />
+        </div>
+      </div>
+
+      <div className="-mr-2 flex justify-end md:hidden p-3">
+        <HamburgerMenu isOpen={isOpen} toggle={toggleMenu} />
+        {isOpen ? <MobileMenu links={NavbarLinks} close={toggleMenu} /> : <></>}
       </div>
     </div>
   );

@@ -3,11 +3,11 @@ import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="bg-slate-50 h-screen ">
+    <div className="bg-slate-50 h-screen overflow-auto">
       <div>
         <Sidebar />
       </div>
-      <main className="h-full bg-slate-50 ">{children}</main>
+      <main className=" bg-slate-50 h-screen">{children}</main>
       <Footer />
     </div>
   );

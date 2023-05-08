@@ -1,7 +1,7 @@
 import * as FaIcons from "react-icons/fa";
 import * as HiIcons from "react-icons/hi2";
 
-export const SidebarData = [
+export const NavbarLinks = [
   {
     title: "Projects",
     path: "/projects",

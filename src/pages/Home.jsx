@@ -5,11 +5,12 @@ import { ImLinkedin } from "react-icons/im";
 
 const Home = () => {
   return (
-    <div className="flex  flex-col justify-center items-center h-full ">
+    <div className="flex  flex-col justify-center items-center h-screen ">
       <i className="mb-4">logo</i>
       <h1 className="text-5xl font-bold">Cazterk</h1>
       <p className="my-4 text-lg font-medium ">
-        Christian | Frontend First Dev | Dotnet Backend | Unity
+        Christian | Frontend React | Dotnet Backend | Andriod + Jetpack Compose
+        | Unity
       </p>
       <IconContext.Provider value={{ size: "20", color: "#ff6b6b" }}>
         <div className="flex">
