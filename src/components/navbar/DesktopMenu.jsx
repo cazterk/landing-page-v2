@@ -9,7 +9,7 @@ const DesktopMenu = ({ links }) => {
       <div className="flex">
         {links.map((item, idx) => {
           return (
-            <li key={idx} className="list-none hidden md:block">
+            <li key={idx} className="list-none ">
               <IconContext.Provider value={{ size: "18", color: "#ff6b6b" }}>
                 <Link to={item.path} className="flex items-center px-2 ">
                   {item.icon}
