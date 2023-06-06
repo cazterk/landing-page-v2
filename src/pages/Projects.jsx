@@ -2,8 +2,8 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <>
-      <div class="grid gap-4 grid-cols-2 grid-rows-1 h-screen">
+    <div className="h-fit sm:h-screen">
+      <div class="grid gap-4  grid-rows-1   md:grid-cols-2 h-full  ">
         <div className="personality h-full border-solid border-2  border-gray-200 ">
           <h1 className="p-4">Personal Details</h1>
           <div className="content p-4">
@@ -36,16 +36,48 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="sec2  grid grid-cols-1 gap-4">
+        <div className="sec2 grid grid-cols-1 gap-4">
           <div className="skills h-full border-solid border-2  border-gray-200 ">
-            <h1>SKill</h1>
+            <h1 className="p-4">SKill</h1>
+            <p className="py-1">
+              React econsystem [JavaScript, TypeScript and more]
+            </p>
+
+            <p className="py-1">
+              {" "}
+              UI-Engineering [Basic and Complex CSS and Design Systems]
+            </p>
+            <p className="py-1">
+              {" "}
+              UI-Engineering [Basic and Complex CSS and Design Systems]
+            </p>
+            <p className="py-1">
+              {" "}
+              UI-Engineering [Basic and Complex CSS and Design Systems]
+            </p>
+            <p className="py-1">
+              {" "}
+              UI-Engineering [Basic and Complex CSS and Design Systems]
+            </p>
           </div>
           <div className="hobbies h-full border-solid border-2  border-gray-200 ">
             <h1>Hobbies</h1>
+            <p className="py-1">
+              {" "}
+              UI-Engineering [Basic and Complex CSS and Design Systems]
+            </p>
+            <p className="py-1">
+              {" "}
+              UI-Engineering [Basic and Complex CSS and Design Systems]
+            </p>
+            <p className="py-1">
+              {" "}
+              UI-Engineering [Basic and Complex CSS and Design Systems]
+            </p>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default Projects;
