@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
       <div>
         <Sidebar />
       </div>
-      <main className=" bg-slate-50  m-6">{children}</main>
+      <main className=" bg-slate-50 min-h-200 m-6 2xl:px-96">{children}</main>
 
       <div className="">
         <Footer />
