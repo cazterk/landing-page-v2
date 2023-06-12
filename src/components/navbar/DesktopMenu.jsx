@@ -10,10 +10,12 @@ const DesktopMenu = ({ links }) => {
         {links.map((item, idx) => {
           return (
             <li key={idx} className="list-none ">
-              <IconContext.Provider value={{ size: "18", color: "#ff6b6b" }}>
+              <IconContext.Provider value={{ size: "13", color: "#ff6b6b" }}>
                 <Link to={item.path} className="flex items-center px-2 ">
                   {item.icon}
-                  <span className="pl-1">{item.title}</span>
+                  <span className="pl-1 text-xs font-semibold">
+                    {item.title}
+                  </span>
                 </Link>
               </IconContext.Provider>
             </li>

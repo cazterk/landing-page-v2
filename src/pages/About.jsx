@@ -10,28 +10,31 @@ const About = () => {
             <p className={paraProperties}>✝️Follower of Christ✝️</p>
 
             <p className={paraProperties}>
-              👋🏼Hey there I'm a software developer, I make indie games
-              occasionally too, passionate about developing robust applications
-              with great user experience and great interfaces
+              Hey👋🏼there I'm caz a full stack software developer, I make indie
+              games occasionally too, passionate about developing robust
+              applications with great user experience and great interfaces. My
+              interests include Object Oriented Programming, Frontend, Backend,
+              and Mobile development. I did a computer-related course at
+              university
+            </p>
+
+            <p className={paraProperties}>
+              I have interesting things I do which include a YouTube channel and
+              a blog where I drop software development content, a subscription
+              on both or ether will be appreciated.
+            </p>
+
+            <p className={paraProperties}>
+              I have experience in various technologies and tools in both
+              commercial and non-commercial settings, the technologies that I
+              have worked with include, ReactJS, Dotnet, Django, PostgreSQL,
+              Docker, Git, and everything in between.
             </p>
 
             <p className={paraProperties}>
               {" "}
-              🏡Based in Lusaka, Zambia But open to relocating to wherever
-              awesome opportunities take me
-            </p>
-            <p className={paraProperties}>🙂Very Pragmatic</p>
-
-            <p className={paraProperties}>
-              👷🏽I have experience in various technologies and tools in both a
-              commercial and non-commercial setting, I technologies that I have
-              worked with include , ReactJS, Dotnet, Django, Docker, Git and
-              more...
-            </p>
-
-            <p className={paraProperties}>
-              🥲I enjoy working with Android, React, Dotnet, OOP quite a lot and
-              very open to work with a lot more technologies
+              Based in Lusaka, Zambia But open to relocating to wherever awesome
+              opportunities take me
             </p>
           </div>
         </div>

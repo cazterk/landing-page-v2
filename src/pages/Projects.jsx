@@ -63,9 +63,10 @@ const Projects = () => {
           <h1 className="p-4 font-bold">Hobbies</h1>
           <div className="content p-4">
             <p className={paraProperties}>🌱Working in the garden</p>
-            <p className={paraProperties}>🚶🏽Taking Walks</p>
+            <p className={paraProperties}>🚶🏽Taking walks</p>
             <p className={paraProperties}> 🎙️Listening to podcasts</p>
             <p className={paraProperties}> 🤸🏽‍♂️Working out</p>
+            <p className={paraProperties}> 🎵Listening to music</p>
           </div>
         </div>
       </div>
