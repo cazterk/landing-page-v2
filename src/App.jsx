@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
+import "typeface-nunito";
 
 const App = () => {
   return (

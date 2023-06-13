@@ -6,7 +6,7 @@ const DesktopMenu = ({ links }) => {
     <>
       <Link to={"/"} className="h-8 w-8 flex items-center ">
         <img src="logo.png" />
-        <h4 className="text-sm font-bold">CAZTERK</h4>
+        <h4 className="text-sm font-extrabold">CAZTERK</h4>
       </Link>
 
       <div className="flex">

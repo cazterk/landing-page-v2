@@ -24,10 +24,18 @@ const Sidebar = () => {
       <div className=" flex justify-between 2xl:hidden p-3">
         <Link to={"/"} className="h-8 w-8 flex items-center lg:hidden ">
           <img src="logo.png" />
-          <h4 className="text-sm font-bold">CAZTERK</h4>
+          <h4 className="text-sm font-extrabold">CAZTERK</h4>
         </Link>
         <HamburgerMenu isOpen={isOpen} toggle={toggleMenu} />
-        {isOpen ? <MobileMenu links={NavbarLinks} close={toggleMenu} /> : <></>}
+        {isOpen ? (
+          <MobileMenu
+            links={NavbarLinks}
+            close={toggleMenu}
+            onClick={toggleMenu}
+          />
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );

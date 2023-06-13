@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { useEffect, useState } from "react";
 
-const MobileMenu = ({ links, close }) => {
+const MobileMenu = ({ links, close, onClick }) => {
   const [animation, setAnimation] = useState(false);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const MobileMenu = ({ links, close }) => {
           }`}
         >
           <div className="flex items-center justify-between">
-            <h1>Navigation</h1>
+            <h1 className="font-semibold">Hey👋🏼</h1>
             <AiFillCloseCircle
               className="w-6 h-6 hover:scale-110 transition-all cursor-pointer"
               onClick={close}
@@ -39,6 +39,7 @@ const MobileMenu = ({ links, close }) => {
                 <Link
                   key={index}
                   to={path}
+                  onClick={onClick}
                   className="block py-2 text-zinc-500"
                 >
                   {title}
