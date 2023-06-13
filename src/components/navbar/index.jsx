@@ -15,14 +15,17 @@ const Sidebar = () => {
 
   return (
     <div>
-      <div className=" hidden sm:block">
-        <div className="flex h-16 bg-white justify-between px-96 items-center">
+      <div className=" hidden lg:block">
+        <div className="flex h-16 bg-white justify-between  items-center px-3 xl:px-96">
           <DesktopMenu links={NavbarLinks} />
         </div>
       </div>
 
-      <div className=" flex justify-between sm:hidden p-3">
-        <Link to={"/"}>Logo</Link>
+      <div className=" flex justify-between 2xl:hidden p-3">
+        <Link to={"/"} className="h-8 w-8 flex items-center lg:hidden ">
+          <img src="logo.png" />
+          <h4 className="text-sm font-bold">CAZTERK</h4>
+        </Link>
         <HamburgerMenu isOpen={isOpen} toggle={toggleMenu} />
         {isOpen ? <MobileMenu links={NavbarLinks} close={toggleMenu} /> : <></>}
       </div>

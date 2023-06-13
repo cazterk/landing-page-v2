@@ -9,9 +9,9 @@ const Projects = () => {
   return (
     <div className="h-fit sm:h-screen">
       <div className="sec2 grid grid-cols-1 gap-4">
-        <div className="skills h-full border-solid border-2 border-gray-200 rounded">
-          <h1 className="p-4 font-bold">SKill</h1>
-          <div className="content p-4">
+        <div className="skills p-4 h-full border-solid border-2 border-gray-200 rounded">
+          <h1 className="py-2 font-bold">SKills</h1>
+          <div className="content ">
             <ul className="list-disc">
               <li className={paraProperties}>
                 Very Good At Frontend Development and UI-Engineering
@@ -26,7 +26,7 @@ const Projects = () => {
               <li className={paraProperties}>Containerization</li>
               <li className={paraProperties}>Game Development</li>
             </ul>
-            <h6 className=" pt-4 font-bold">Languages & Frameworks</h6>
+            <h6 className=" pt-2 font-bold">Languages & Frameworks</h6>
 
             <IconContext.Provider
               value={{
@@ -59,9 +59,9 @@ const Projects = () => {
             </IconContext.Provider>
           </div>
         </div>
-        <div className="hobbies h-full border-solid border-2 border-gray-200 rounded">
-          <h1 className="p-4 font-bold">Hobbies</h1>
-          <div className="content p-4">
+        <div className="hobbies p-4 h-full border-solid border-2 border-gray-200 rounded">
+          <h1 className="py-2 font-bold">Hobbies</h1>
+          <div className="content ">
             <p className={paraProperties}>🌱Working in the garden</p>
             <p className={paraProperties}>🚶🏽Taking walks</p>
             <p className={paraProperties}> 🎙️Listening to podcasts</p>
