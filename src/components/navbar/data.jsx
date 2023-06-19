@@ -14,7 +14,7 @@ export const NavbarLinks = [
     icon: <BsIcons.BsFillPersonFill />,
   },
   {
-    title: "Projects",
+    title: "Skils",
     path: "/projects",
     icon: <FaIcons.FaLaptopCode />,
   },

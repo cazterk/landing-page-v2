@@ -56,6 +56,10 @@ const Projects = () => {
                 <AiIcons.AiOutlineContainer />
                 Containerization & Orchestration: Docker
               </p>
+              <p className={paraProperties}>
+                <FaIcons.FaGamepad />
+                Game Development: Unity Engine
+              </p>
             </IconContext.Provider>
           </div>
         </div>
