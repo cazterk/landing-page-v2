@@ -7,7 +7,7 @@ const Projects = () => {
   const paraProperties = " flex py-1 text-sm font-semibold";
 
   return (
-    <div className="h-fit sm:h-screen">
+    <div className="h-screen">
       <div className="sec2 grid grid-cols-1 gap-4">
         <div className="skills p-4 h-full border-solid border-2 border-gray-200 rounded">
           <h1 className="py-2 font-bold">SKills</h1>
