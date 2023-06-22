@@ -6,8 +6,8 @@ import { ImLinkedin } from "react-icons/im";
 const Home = () => {
   return (
     <div className="flex  flex-col justify-center items-center h-screen ">
-      <h1 className="text-5xl font-black">Cazterk</h1>
-      <p className="my-4  font-medium ">
+      <h1 className="text-5xl font-black dark:text-gray-300">Cazterk</h1>
+      <p className="dark:text-gray-300 my-4 font-medium ">
         Christian | Full Stack | Mobile | Game Dev{" "}
       </p>
       <IconContext.Provider value={{ size: "20", color: "#ff6b6b" }}>

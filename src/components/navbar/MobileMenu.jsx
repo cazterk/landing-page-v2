@@ -22,14 +22,14 @@ const MobileMenu = ({ links, close, onClick }) => {
       <div className="fixed inset-0 top-0 1-0 h-screen w-full backdrop-blur-sm bg-gray-500 bg-opacity-60"></div>
       <div className="fixed inset-0 top-0 1-0 p-5">
         <div
-          className={`w-full bg-white rounded-xl p-5 transition-all ${
+          className={`w-full bg-white dark:text-gray-900 dark:bg-gray-800 rounded-xl p-5 transition-all ${
             animation ? "scale-100" : "scale-95"
           }`}
         >
           <div className="flex items-center justify-between">
-            <h1 className="font-semibold">Hey👋🏼</h1>
+            <h1 className="font-semibold dark:text-gray-300">Hey👋🏼</h1>
             <AiFillCloseCircle
-              className="w-6 h-6 hover:scale-110 transition-all cursor-pointer"
+              className="w-6 h-6 hover:scale-110 transition-all cursor-pointer dark:text-gray-300"
               onClick={close}
             />
           </div>

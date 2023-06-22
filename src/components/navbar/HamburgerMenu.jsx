@@ -3,7 +3,7 @@ import React from "react";
 const HamburgerMenu = ({ isOpen, toggle }) => {
   return (
     <button
-      className="block lg:hidden text-gray-800 hover:text-black focus:text-black focus:outline-none"
+      className="block lg:hidden text-gray-800 hover:text-black focus:text-black focus:outline-none dark:text-gray-300"
       onClick={toggle}
     >
       <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">

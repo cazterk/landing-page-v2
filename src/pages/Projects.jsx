@@ -4,13 +4,13 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 
 const Projects = () => {
-  const paraProperties = " flex py-1 text-sm font-semibold";
+  const paraProperties = " flex py-1 text-sm font-semibold dark:text-gray-300";
 
   return (
     <div className="h-screen">
       <div className="sec2 grid grid-cols-1 gap-4">
         <div className="skills p-4 h-full border-solid border-2 border-gray-200 rounded">
-          <h1 className="py-2 font-bold">SKills</h1>
+          <h1 className="py-2 font-bold dark:text-gray-300">SKills</h1>
           <div className="content ">
             <ul className="list-disc">
               <li className={paraProperties}>
@@ -26,7 +26,9 @@ const Projects = () => {
               <li className={paraProperties}>Containerization</li>
               <li className={paraProperties}>Game Development</li>
             </ul>
-            <h6 className=" pt-2 font-bold">Languages & Frameworks</h6>
+            <h6 className=" pt-2 font-bold dark:text-gray-300">
+              Languages & Frameworks
+            </h6>
 
             <IconContext.Provider
               value={{
@@ -64,12 +66,12 @@ const Projects = () => {
           </div>
         </div>
         <div className="hobbies p-4 h-full border-solid border-2 border-gray-200 rounded">
-          <h1 className="py-2 font-bold">Hobbies</h1>
+          <h1 className="py-2 font-bold dark:text-gray-300">Hobbies</h1>
           <div className="content ">
             <p className={paraProperties}>🌱Working in the garden</p>
             <p className={paraProperties}>🚶🏽Taking walks</p>
-            <p className={paraProperties}> 🎙️Listening to podcasts</p>
             <p className={paraProperties}> 🤸🏽‍♂️Working out</p>
+            <p className={paraProperties}> 🎙️Listening to podcasts</p>
             <p className={paraProperties}> 🎵Listening to music</p>
           </div>
         </div>

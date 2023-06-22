@@ -5,6 +5,7 @@ import { NavbarLinks } from "./data";
 import HamburgerMenu from "./HamburgerMenu";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
+import Switcher from "../../utils/Switcher";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ const Sidebar = () => {
   return (
     <div>
       <div className=" hidden lg:block">
-        <div className="flex h-16 bg-white justify-between  items-center px-3 xl:px-96">
+        <div className="flex h-16 bg-white dark:bg-gray-800 justify-between  items-center px-3 xl:px-96">
           <DesktopMenu links={NavbarLinks} />
         </div>
       </div>
@@ -24,8 +25,9 @@ const Sidebar = () => {
       <div className=" flex justify-between 2xl:hidden p-3">
         <Link to={"/"} className="h-8 w-8 flex items-center lg:hidden ">
           <img src="logo.png" />
-          <h4 className="text-sm font-extrabold">CAZTERK</h4>
+          <h4 className="text-sm font-extrabold dark:text-gray-300">CAZTERK</h4>
         </Link>
+        <Switcher />
         <HamburgerMenu isOpen={isOpen} toggle={toggleMenu} />
         {isOpen ? (
           <MobileMenu
