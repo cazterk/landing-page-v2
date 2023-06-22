@@ -5,8 +5,8 @@ import Switcher from "../../utils/Switcher";
 const DesktopMenu = ({ links }) => {
   return (
     <>
-      <Link to={"/"} className="h-8 w-8 flex items-center ">
-        <img src="logo.png" />
+      <Link to={"/"} className="h-6 w-6 flex items-center ">
+        <img src="logo.png" className="h-4 w-4 mr-1" />
         <h4 className="text-sm font-extrabold dark:text-gray-300 ">CAZTERK</h4>
       </Link>
       <Switcher />
