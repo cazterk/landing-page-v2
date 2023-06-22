@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <div className="h-screen">
       <div className="sec2 grid grid-cols-1 gap-4">
-        <div className="skills p-4 h-full border-solid border-2 border-gray-200 rounded">
+        <div className="skills p-4 h-full border-solid border-2 border-gray-200 dark:border-gray-600 rounded">
           <h1 className="py-2 font-bold dark:text-gray-300">SKills</h1>
           <div className="content ">
             <ul className="list-disc">
@@ -65,7 +65,7 @@ const Projects = () => {
             </IconContext.Provider>
           </div>
         </div>
-        <div className="hobbies p-4 h-full border-solid border-2 border-gray-200 rounded">
+        <div className="hobbies p-4 h-full border-solid border-2 border-gray-200 dark:border-gray-600 rounded">
           <h1 className="py-2 font-bold dark:text-gray-300">Hobbies</h1>
           <div className="content ">
             <p className={paraProperties}>🌱Working in the garden</p>
