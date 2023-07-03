@@ -2,7 +2,7 @@ const About = () => {
   const paraProperties = "py-1 text-sm font-semibold dark:text-gray-300";
 
   return (
-    <div className="h-screen">
+    <div className="">
       <div className="grid gap-4  grid-rows-1 md:grid-cols-1 ">
         <div className="personality  border-solid border-2 border-gray-200 dark:border-gray-600 rounded">
           <h1 className="p-4 font-bold dark:text-gray-300">Personal Details</h1>

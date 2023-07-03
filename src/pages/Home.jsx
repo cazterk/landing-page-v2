@@ -5,7 +5,7 @@ import { ImLinkedin } from "react-icons/im";
 
 const Home = () => {
   return (
-    <div className="flex  flex-col justify-center items-center h-screen ">
+    <div className="flex  flex-col justify-center items-center h-130 md:h-160 ">
       <h1 className="text-5xl font-black dark:text-gray-300">Cazterk</h1>
       <p className="dark:text-gray-300 my-4 font-medium ">
         Christian | Full Stack | Mobile | Game Dev{" "}

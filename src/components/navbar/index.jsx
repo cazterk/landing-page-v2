@@ -22,12 +22,12 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className=" flex justify-between 2xl:hidden p-3">
+      <div className=" flex justify-between lg:hidden p-3">
         <Link to={"/"} className="h-8 w-8 flex items-center lg:hidden ">
           <img src="logo.png" className="h-4 w-4 mr-1" />
           <h4 className="text-sm font-extrabold dark:text-gray-300">CAZTERK</h4>
         </Link>
-        <Switcher />
+        <Switcher size={26} />
         <HamburgerMenu isOpen={isOpen} toggle={toggleMenu} />
         {isOpen ? (
           <MobileMenu

@@ -9,8 +9,11 @@ const DesktopMenu = ({ links }) => {
         <img src="logo.png" className="h-4 w-4 mr-1" />
         <h4 className="text-sm font-extrabold dark:text-gray-300 ">CAZTERK</h4>
       </Link>
-      <Switcher />
-      <div className="flex">
+
+      <div className="flex items-center">
+        <div className="pr-2 ">
+          <Switcher size={20} />
+        </div>
         {links.map((item, idx) => {
           return (
             <li key={idx} className="list-none ">

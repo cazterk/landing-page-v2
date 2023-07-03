@@ -9,7 +9,8 @@ const Layout = ({ children }) => {
       </div>
       <main className="m-6 2xl:px-96">{children}</main>
 
-      <div className="px-2 py-14">
+      <div className="push h-14"></div>
+      <div className="px-2 py-14 ">
         <Footer />
       </div>
     </div>
